@@ -9,6 +9,7 @@ function calculatedTraingle(){
     const height= parseFloat(traingletext2);
     console.log(height);
 
-
+    const area=0.5*base*height;
+    console.log(area);
 
 }
