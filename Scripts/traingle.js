@@ -12,4 +12,7 @@ function calculatedTraingle(){
     const area=0.5*base*height;
     console.log(area);
 
+    const traingleareaspan=document.getElementById('traingle_area');
+    traingleareaspan.innerText = area;
+
 }
