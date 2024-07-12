@@ -16,3 +16,5 @@ function calculatedTraingle(){
     traingleareaspan.innerText = area;
 
 }
+
+
