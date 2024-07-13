@@ -124,16 +124,19 @@
                     alt="ellipse" />
                 </figure>
                 <div class="card-body">
-                    <h3 class="text-2xl text-center">triangle</h3>
-                    <p class="text-center text-2xl">Area=0.5*b*h</p>
+                    <h3 class="text-2xl text-center">Ellipse</h3>
+                    <p class="text-center text-2xl">Area (A) = πab</p>
                     <div>
-                      <input type="text" placeholder="b" class="border-2 w-24 rounded-md  text-2xl">
+                      <input id="ellipse-a" type="text" placeholder="b" class="border-2 w-24 rounded-md  text-2xl">
                     <span class="gap-1">cm</span>
-                    <input type="text" placeholder="h" class="border-2 w-24 rounded-md  text-2xl">
+                    <input id="ellipse-b" type="text" placeholder="h" class="border-2 w-24 rounded-md  text-2xl">
                     <span class="gap-1">cm</span>
                     </div>
+                    <div>
+                      <p> Area: <span id="ellipse_area"></span> <span>cm</span><span><sup>2</sup></span></p>
+                    </div>
                     <div class="card-actions justify-start">
-                      <button class="btn btn-primary w-full">Calculate</button>
+                      <button onclick="calculatedEllipse()" class="btn btn-primary w-full">Calculate</button>
                     </div>
                   </div>
               </div>
@@ -145,16 +148,19 @@
                     alt="pentagon" />
                 </figure>
                 <div class="card-body">
-                    <h3 class="text-2xl text-center">triangle</h3>
-                    <p class="text-center text-2xl">Area=0.5*b*h</p>
+                    <h3 class="text-2xl text-center">Pentagon</h3>
+                    <p class="text-center text-2xl">Area=0.5*p*b</p>
                     <div>
-                      <input type="text" placeholder="b" class="border-2 w-24 rounded-md  text-2xl">
+                      <input id="Pentagon-P" type="text" placeholder="b" class="border-2 w-24 rounded-md  text-2xl">
                     <span class="gap-1">cm</span>
-                    <input type="text" placeholder="h" class="border-2 w-24 rounded-md  text-2xl">
+                    <input id="Pentagon-B"  type="text" placeholder="h" class="border-2 w-24 rounded-md  text-2xl">
                     <span class="gap-1">cm</span>
                     </div>
+                    <div>
+                      <p> Area: <span id="Pentagon_area"></span> <span>cm</span><span><sup>2</sup></span></p>
+                    </div>
                     <div class="card-actions justify-start">
-                      <button class="btn btn-primary w-full">Calculate</button>
+                      <button onclick="calculatedPentagon()" class="btn btn-primary w-full">Calculate</button>
                     </div>
                   </div>
               </div>
@@ -170,6 +176,8 @@
     <script src="/Scripts/rectangle.js"></script>
     <script src="/Scripts/parallelogram.js"></script>
     <script src="./Scripts/Rhombus.js"></script>
+    <script src="./Scripts/Ellipse.js"></script>
+    <script src="./Scripts/Pentagon.js"></script>
     
 </body>
 </html>
