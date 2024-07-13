@@ -51,7 +51,7 @@
                     alt="Rectangle" />
                 </figure>
                 <div class="card-body">
-                    <h3 class="text-2xl text-center">triangle</h3>
+                    <h3 class="text-2xl text-center">Rectangle</h3>
                     <p class="text-center text-2xl">Area=l*w</p>
                     <div>
                       <input id="rectangle_length" type="text" placeholder="b" class="border-2 w-24 rounded-md  text-2xl">
@@ -76,16 +76,19 @@
                     alt="parallelogram" />
                 </figure>
                 <div class="card-body">
-                    <h3 class="text-2xl text-center">triangle</h3>
-                    <p class="text-center text-2xl">Area=0.5*b*h</p>
+                    <h3 class="text-2xl text-center">Parallelogram</h3>
+                    <p class="text-center text-2xl">Area (A) = b*h</p>
                     <div>
-                      <input type="text" placeholder="b" class="border-2 w-24 rounded-md  text-2xl">
+                      <input id="Parallelogram-base" type="text" placeholder="b" class="border-2 w-24 rounded-md  text-2xl">
                     <span class="gap-1">cm</span>
-                    <input type="text" placeholder="h" class="border-2 w-24 rounded-md  text-2xl">
+                    <input id="Parallelogram-height" type="text" placeholder="h" class="border-2 w-24 rounded-md  text-2xl">
                     <span class="gap-1">cm</span>
                     </div>
+                    <div>
+                      <p> Area: <span id="Parallelogram_area"></span> <span>cm</span><span><sup>2</sup></span></p>
+                    </div>
                     <div class="card-actions justify-start">
-                      <button class="btn btn-primary w-full">Calculate</button>
+                      <button onclick=" calculatedParallelogram()" class="btn btn-primary w-full ">Calculate</button>
                     </div>
                   </div>
               </div>
@@ -162,5 +165,7 @@
     </main>
     <script src="/Scripts/traingle.js"></script>
     <script src="/Scripts/rectangle.js"></script>
+    <script src="/Scripts/parallelogram.js"></script>
+    
 </body>
 </html>
